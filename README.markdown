@@ -108,3 +108,10 @@ The following problems should only occur in case you are on a developer checkout
 
     Make sure you have installed all the dependencies mentioned above, or in case you have installed an older version upgrade accordingly.
 
+* If you run `phpdox.php` and get the following error:
+        $ phpdox
+        PHP Warning:  require(pdepend/reflection/Autoloader.php): failed to open stream: No such file or directory in /var/www/phpdox/phpdox.php on line 50
+
+    Make sure you have installed all the dependencies mentioned above, or in case you have installed an older version upgrade accordingly. 
+    In this special case the `pdepend/staticReflection-beta`-PEAR-Package is missing.
+
